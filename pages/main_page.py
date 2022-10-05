@@ -1,19 +1,14 @@
-from selene import have, Collection
-from selene.support.shared import browser
-from selenium.webdriver import ActionChains
+from ui.dropdown_submenu import DropdownSubMenu
+from ui.navigation_menu import NavigationMenu
 
 
+# noinspection PyMethodMayBeStatic
 class MainPage:
 
-    def get_subjects(self, name: str):
-        element = browser.element("//a[contains(text(),'" + name + "')]")
-        action = ActionChains(self)
-        action.move_to_element(element).click().perform()
-        subjects = browser.elements('#Level1NavNode2 > ul li')
-        return subjects
+    def get_header_menu(self):
+        menus = DropdownSubMenu().get_all_submenu()
 
-    def subjects_should_have(self, elements: Collection, values: list):
-        elements.should(have.text(' '.join(values)))
-        return self
+    def item_should_be_visible(self, name: str):
+        NavigationMenu(self).check_menu_item_is_visible(name)
 
 
