@@ -6,7 +6,7 @@ import allure
 
 
 class BaseSession(Session):
-    default_url = "https://www.wiley.com/en-ie"
+    default_url = "https://www.wiley.com/en-us"
     search_url = "/search/autocomplete/comp_00001H9J"
 
     def __init__(self, **kwargs):
