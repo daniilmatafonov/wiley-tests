@@ -3,7 +3,6 @@ import time
 import allure
 import pytest
 from dotenv import load_dotenv
-from selene import have, command
 from selene.support.shared import browser
 
 BASE_BROWSER_TIMEOUT=10
