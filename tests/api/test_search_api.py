@@ -18,6 +18,5 @@ def test_search_api():
 @allure.tag('api')
 def test_check_terms_count():
     response = requestSession().get(BaseSession.search_url, headers=headers, params="term=Java")
-    assert response.status_code == 200
     result = json.loads(response.text)
     assert len(result['suggestions']) == EXPECTED_TERMS_COUNT
