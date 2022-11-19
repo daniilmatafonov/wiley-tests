@@ -1,6 +1,6 @@
 import allure
 
-from tests.conftest import open_page
+from web.conftest import open_page
 from model import application
 
 url = 'https://wiley.com/en-ie'
