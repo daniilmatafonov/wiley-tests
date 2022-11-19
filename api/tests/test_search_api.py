@@ -1,7 +1,7 @@
 import allure
 import json
 
-from helpers.url import BaseSession, requestSession
+from api.helpers.url import BaseSession, requestSession
 
 headers = {'User-Agent': 'PostmanRuntime/7.28.4'}
 EXPECTED_TERMS_COUNT = 4

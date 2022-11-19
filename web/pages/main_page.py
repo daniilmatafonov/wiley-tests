@@ -1,5 +1,5 @@
-from ui.dropdown_submenu import DropdownSubMenu
-from ui.navigation_menu import NavigationMenu
+from web.components.dropdown_submenu import DropdownSubMenu
+from web.components.navigation_menu import NavigationMenu
 
 
 # noinspection PyMethodMayBeStatic
