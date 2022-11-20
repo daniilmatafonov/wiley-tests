@@ -4,7 +4,6 @@ from web.conftest import open_page
 from api.model import application
 
 url = 'https://wiley.com/en-ie'
-expectedSubjects = ["Accounting", "Agriculture"],
 
 
 @allure.description('Who We Serve')
