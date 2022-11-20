@@ -18,7 +18,7 @@
 *  Определить системный параметр :
     - TESTS_FOLDER :
       - api/tests
-      - web/tests/
+      - web/tests
 
 
 ### Local
